@@ -26,9 +26,8 @@ img.logo-head {
 
 footer {
 	background-color: lightblue;
-	position: fixed;
-	bottom: 0;
 	min-width: 100%;
+    margin-top: 20px;
 }
 
 .foot {

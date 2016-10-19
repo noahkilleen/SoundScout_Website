@@ -22,9 +22,9 @@ img.logo-head {
 
 footer {
 	background-color: lightblue;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
-	min-width: 100em;
+	min-width: 100%;
 }
 
 .foot {

@@ -1,0 +1,17 @@
+/*
+	File: contact.css;
+	Author: DE
+	Date created: 19 Oct 2016
+	Date modified: 19 Oct 2016;
+*/
+
+h3 {
+	text-align: center;
+}
+
+.blurb {
+	background-color: lightblue;
+	min-height: 20em;
+	padding: 1em;
+	text-indent: 2em;
+}

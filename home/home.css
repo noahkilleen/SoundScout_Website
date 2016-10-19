@@ -12,3 +12,12 @@
 .picks{
 	text-align: center;
 }
+
+.advancedSearch {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.advancedSearch h3 {
+    text-align: center;
+}

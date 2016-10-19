@@ -11,9 +11,13 @@
 }
 
 .search {
-	float: right;
-	max-width: 10em;
+	position: fixed;
+	right: 10;
+
 }
+
+
+
 
 img.logo-head {
     max-width: 15em;

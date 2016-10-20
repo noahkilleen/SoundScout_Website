@@ -7,6 +7,8 @@
 
 h3 {
 	text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-variant: small-caps;
 }
 
 .blurb {
@@ -14,9 +16,5 @@ h3 {
 	min-height: 20em;
 	padding: 1em;
 	text-indent: 2em;
+    font-family: Verdana, Geneva, sans-serif;
 }
-
-/* dsdsd
-
-
-*/

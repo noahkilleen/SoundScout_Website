@@ -21,3 +21,94 @@
 .advancedSearch h3 {
     text-align: center;
 }
+
+.featuredSong {
+	position: relative;
+	border: 2px solid #dddddd;
+}
+
+.featureDetail {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 25%;
+	background: rgba(0, 0, 0, 0.7);
+	
+}
+
+.featuredSong img {
+	width: 100%;	
+}
+
+.shadow {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	-webkit-box-shadow: inset 0px 0px 109px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 109px 5px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 109px 5px rgba(0,0,0,0.75);
+}
+
+.featuredSong h2 {
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-bottom: 0;
+	font-size: 160%;
+	color: white;
+}
+
+.featuredSong p {
+	color: white;
+	margin-top: 5px;
+	margin-left: 8px;
+	font-family: Arial;
+	font-size: 80%;
+}
+
+.new {
+	position: relative;
+	width: 100%;
+	height: 30em;
+	background-color: #333333;
+
+	-webkit-box-shadow: inset 0px 0px 109px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 109px 5px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 109px 5px rgba(0,0,0,0.75);
+}
+
+.hits {
+	margin-top: 10px;
+}
+
+.new h2 {
+	/*position: absolute;*/
+	margin: 18px 0px 0px 20px;
+	top: 0px;
+	color: white;
+	font-size: 160%;
+}
+
+.new ul {
+	list-style-type: none;
+	list-style-position: outside;
+	padding-left: 0;
+	margin-left: 24px;
+}
+.new a {
+	text-decoration: none;
+	color: white;	
+}
+
+.new a:hover {
+	color: lightblue;
+}
+
+.new li {
+	margin-bottom: 4px;
+}
+
+.new span {
+	font-size: 80%;
+
+}

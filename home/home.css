@@ -13,6 +13,24 @@
 	text-align: center;
 }
 
+audio{
+	max-width: 17em;
+}
+
+.picks_box{
+	background-color: lightblue;
+	text-align: center;
+	min-height: 30em;
+	min-width: 50em;
+	padding: 1em;
+	text-indent: 2em;
+    font-family: Verdana, Geneva, sans-serif;
+    border: solid;
+    margin-top: 2em;
+    margin-right: 1em;
+
+}
+
 .advancedSearch {
     border: 1px solid gray;
     padding: 10px;

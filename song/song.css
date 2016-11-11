@@ -1,0 +1,25 @@
+h3 {
+	text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-variant: small-caps;
+}
+
+.song_box {
+	background-color: lightblue;
+	text-align: center;
+	min-height: 20em;
+	min-width: 50em;
+	padding: 1em;
+	text-indent: 2em;
+    font-family: Verdana, Geneva, sans-serif;
+    border: solid;
+}
+
+.padding {
+	padding-top: 1em;
+	padding-left: 15em;
+}
+
+audio{
+	padding-left: 1em;
+}

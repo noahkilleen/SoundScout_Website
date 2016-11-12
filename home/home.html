@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../layout/layout.css" type="text/css" >
     <link rel="stylesheet" href="./home.css">
+    <script type = "text/javascript" src = "./advancedSearchValidate.js"></script>
     <title>SoundScout - Home</title>
 </head>
 
@@ -32,7 +33,7 @@
                     <a href="../other.html"> Events</a> 
                 </div>
                 <div class ="col-xs-2">
-                    <a href="../other.html"> Discover</a> 
+                    <a href="../song/song.html"> Discover</a> 
                 </div>
                 <div class ="col-xs-2">
                     <a href="../contact/contact.html"> Contact Us</a> 
@@ -58,7 +59,7 @@
         
             <!-- Featured Song / Image -->
             <div class = "col-xs-8">
-                <a href="../other.html" >
+                <a href="../song/song.html" >
                 <div class = "featuredSong">
                         <img src="./guitarist-feature.jpg" >
                         <div class="shadow"></div>
@@ -84,17 +85,17 @@
                         <div class="row hits">
                             <div class="col-xs-12">
                                 <ul>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
-                                    <li><a href="../other.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
+                                    <li><a href="../song/song.html">SomeSong <span>by</span> SomeArtist</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -110,53 +111,64 @@
             <!-- Album Covers / Popular Songs -->
             <div class = "col-md-8">
                 <div class = "row">
-                	<h3 class ="toppicks"> Staff Top Picks </h3>
-                    <div class = "col-md-4">
-                    	<p class ="picks">
-                    		<img src="../images/ernie.jpg" width="200" height="200">
-                    	</p>
-                    	<p class = "picks">
-                    		Ernie the Dog <br/>
-                    		"A Woof Goodnight"
-                    	</p>
-                    </div>
-                    <div class = "col-md-4">
-                    	<p class ="picks">
-                    		<img src="../images/owl.jpg" width="200" height="200">
-                    	</p>
-                    	<p class ="picks">
-                    		The Owl Lamps <br/>
-                    		"Don't Give a Hoot"
-                    	</p>          
-                    </div>
-                    <div class = "col-md-4">
-                    	<p class ="picks">
-                    		<img src="../images/bagels.jpg" width="200" height="200">
-                    	</p>
-                    	<p class ="picks">
-                    		The Bagels <br/>
-                    		"Seedy Figures"
-                    	</p>  
+                    <div class = "picks_box">
+                    	<h3 class ="toppicks"> Staff Top Picks </h3>
+                        <div class = "col-md-4">
+                        	<p class ="picks">
+                            	<img src="../images/retrosoul.jpg" width="200" height="200">
+                            	Artist: Bensound <br/>
+                            	Song: "Retrosoul"
+                                <audio controls>
+                                    <source src="../music/bensound-retrosoul.mp3" type = "audio/mpeg">
+                                </audio>
+                
+                        	</p>
+                        </div>
+                        <div class = "col-md-4">
+                        	<p class ="picks">
+                        		<img src="../images/funkysuspense.jpg" width="200" height="200">
+                        		Artist: Bensound <br/>
+                        		Song: "Funky Suspense"
+                                <audio controls>
+                                    <source src="../music/bensound-funkysuspense.mp3" type = "audio/mpeg">
+                                </audio>
+                        	</p>          
+                        </div>
+                        <div class = "col-md-4">
+                        	<p class ="picks">
+                        		<img src="../images/anewbeginning.jpg" width="200" height="200">
+                        		Artist: Bensound <br/>
+                        		Song: "A New Beginning"
+                                <audio controls>
+                                    <source src="../music/bensound-anewbeginning.mp3" type = "audio/mpeg">
+                                </audio>
+                        	</p>  
+                        </div>
                     </div>
                </div>
                <div class = "row">
                
                </div>
             </div>
-            
+   
             <!-- Advanced Search Form & Table -->
             <div class = "col-md-4">
                 <div class = "advancedSearch">
+                
                     <h3>Advanced Search</h3>
-                    <form method = "post" action = "">
-                    
+                    <form name = "advancedSearchForm" method = "post" onsubmit = "return validateForm()" action = "">
+
+                        <!-- Keyword Text Box -->
                         <div class = "form-group">
-                            <label>Keyword(s)</label>
-                            <input type = "text" class = "form-control" />
+                            <label><input type = "checkbox" id = "keywordToggle">Keyword(s)</label>
+                            <input type = "text" id = "keywords" class = "form-control" />
+                            <p id = "keywordErrorMessage"></p>
                         </div>
+                        
+                        <!-- Genre Select Drop-Down -->
                         <div class = "form-group">
-                            <label>Genre</label>
-                            <select class = "form-control">
+                            <label><input type = "checkbox" id = "genreToggle" value = "">Genre</label>
+                            <select class = "form-control" id = "genre">
                                 <option>Alternative</option>
                                 <option>Rock</option>
                                 <option>Electronic</option>
@@ -165,29 +177,50 @@
                                 <option>Pop</option>
                             </select>
                         </div>
+                        
+                        <!-- Tag Checkboxes -->
                         <div class = "form-group">
-                            <label>Tags(s)</label>
+                            <label><input type = "checkbox" id = "tagToggle" value = "">Tags(s)</label>
                             <div class = "checkbox">
-                                <label><input type = "checkbox" value = "">Upbeat</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "upbeat">Upbeat</label>
                             </div>
                             <div class = "checkbox">
-                                <label><input type = "checkbox" value = "">Funky</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "funky">Funky</label>
                             </div>
                             <div class = "checkbox">
-                                <label><input type = "checkbox" value = "">Energetic</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "energetic">Energetic</label>
                             </div>
                             <div class = "checkbox">
-                                <label><input type = "checkbox" value = "">Epic</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "epic">Epic</label>
                             </div>
                             <div class = "checkbox">
-                                <label><input type = "checkbox" value = "">Instrumental</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "instrumental" id = "instrumental">Instrumental</label>
                             </div>
                             <div class = "checkbox">
-                                <label><input type = "checkbox" value = "">Vocals Only</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "vocalsonly" id = "vocalsonly">Vocals Only</label>
                             </div>
                             <div class = "checkbox">
-                                <label><input type = "checkbox" value = "">Comedic</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "comedic">Comedic</label>
                             </div>
+                            <div class = "checkbox">
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "explicit" id = "explicit">Explicit</label>
+                            </div>
+                            <div class = "checkbox">
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "nonexplicit" id = "nonexplicit">Non-Explicit</label>
+                            </div>
+                            <div class = "checkbox">
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "romantic">Romantic</label>
+                            </div>
+                            <div class = "checkbox">
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "sad">Sad</label>
+                            </div>
+                            <div class = "checkbox">
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "synthetic">Synthetic</label>
+                            </div>
+                            <div class = "row"></div>
+                            <p></p>
+                            <p id = "tagErrorMessage"></p>
+                            <p id = "overallErrorMessage"></p>
                         </div>
                         <div class = "form-group" style = "text-align: center;">
                             <input type = "submit" value = "Search" class = "btn btn-primary btn-md" />
@@ -204,7 +237,7 @@
     <div class ="foot">
     <footer>
 
-        <i>Copyright &copy; 2016 Sound Scout </i> 
+        <i>Copyright &copy; 2016 Sound Scout | Music: <a href="http://www.bensound.com"> http://www.bensound.com </a></i> 
     </footer>
 </div>
     

@@ -7,10 +7,34 @@
 
 .toppicks{
 	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-variant: small-caps;
 }
 
 .picks{
 	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	padding-top: 2em;
+}
+
+
+audio{
+	max-width: 17em;
+}
+
+.picks_box{
+	background-color: lightblue;
+	text-align: center;
+	min-height: 30em;
+	min-width: 50em;
+	padding: 1em;
+	text-indent: 2em;
+    font-family: Verdana, Geneva, sans-serif;
+    border: solid;
+    margin-top: 2em;
+    margin-right: 1em;
+
 }
 
 .advancedSearch {

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../layout/layout.css" type="text/css" >
+    <link rel="stylesheet" href="./events.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>       
+    <title>SoundScout - Events</title>
+</head>
+
+<body>
+    <div class="row">
+        <!-- Top Header -->
+        <div class="head" >
+            <!--Middle column for logo (4 wide)-->
+            <div>
+                <img src="../images/SoundScout.png" class="logo-head img-responsive center-block" alt="SoundScout" >
+            </div>
+
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <div class ="nav">
+        <div class="container" >
+            <div class ="row">
+                <div class ="col-xs-2">
+                    <a href="../home/home.html"> Home</a> 
+                </div>
+                <div class ="col-xs-2">
+                    <a href="../other.html"> Events</a> 
+                </div>
+                <div class ="col-xs-2">
+                    <a href="../other.html"> Discover</a> 
+                </div>
+                <div class ="col-xs-2">
+                    <a href="../contact/contact.html"> Contact Us</a> 
+                </div>
+                <div class ="col-xs-4">
+                    <p class="search">
+                    	<form name="searchform" action ="" method="post" class = "form-inline">
+                            <div class = "form-group">
+                                <input type ="text" name="searchfield" class = "form-control">
+                                <button type="button" name="searchbutton" class = "btn btn-primary btn-md" >Search</button>
+                            </div>
+                    	</form>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+<!--LEFT EVENT-->
+    <div class="event leftEvent col-xs-4" >
+        <h3>Austin Fall Live Music Festival</h3>
+        <p>Come see the best bands and enjoy the cool weather! Bring a blanket and cuddle up with some friends while you hear from the hottest new local bands as they play their best folk sets as the sun sets.</p>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#leftModal">Details</button>
+    </div>
+
+
+    <div id="leftModal" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Austin Fall Live Music Festival</h4>
+      </div>
+      <div class="modal-body">
+        <p>When: Thursday, November 19th, 2016 -- 5PM</p>
+        <p>Where: Auditorium Shores, Austin, TX</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+        </div>
+    </div>
+
+<!--MIDDLE EVENT-->
+    <div class="event middleEvent col-xs-4" >
+        <h3>The Flares Record Signing</h3>
+        <p>Enjoy a free concert and bring your new Flares record to get it signed. First 100 only. Drinks and food will be provided -- come hungry and thirsty -- and RSVP!</p>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#middleModal">Details</button>
+    </div>
+
+    <div id="middleModal" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">The Flares Record Signing</h4>
+      </div>
+      <div class="modal-body">
+        <p>When: Saturday, December 23rd, 2016 -- 7PM</p>
+        <p>Where: Antones, Austin TX</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+        </div>
+    </div>
+
+
+<!--RIGHT EVENT-->
+    <div class="event rightEvent col-xs-4" >
+        <h3>Travis County Guitar Show</h3>
+        <p>Come see what is new in the guitar universe. Hear from local and national guitar companies on their newest products. The show also offers free and paid master classes in many subjects, including jazz and metal.</p>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#rightModal">Details</button>
+    </div>
+
+    <div id="rightModal" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Travis County Guitar Show</h4>
+      </div>
+      <div class="modal-body">
+        <p>When: Friday to Sunday, December 2nd to 4th, 2016 -- 12PM - 8PM</p>
+        <p>Where: Austin Convention Center, Austin TX</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+        </div>
+    </div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="./events.js"></script>
+</body>
+
+</html>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../layout/layout.css" type="text/css" >
     <link rel="stylesheet" href="./home.css">
-    <script type = "text/javascript" src = "./advancedSearchValidate.js"></script>
+    <script type = "text/javascript" src = "./home.js"></script>
     <title>SoundScout - Home</title>
 </head>
 
@@ -40,10 +40,10 @@
                 </div>
                 <div class ="col-xs-4">
                     <p class="search">
-                    	<form name="searchform" action ="" method="post" class = "form-inline">
+                    	<form name="searchform" action ="search.php" method="post" class = "form-inline">
                             <div class = "form-group">
                                 <input type ="text" name="searchfield" class = "form-control">
-                                <button type="button" name="searchbutton" class = "btn btn-primary btn-md" >Search</button>
+                                <button type="Submit" name="Search" class = "btn btn-primary btn-md" >Search</button>
                             </div>
                     	</form>
                     </p>
@@ -108,7 +108,7 @@
         
         <div class = "row">
         
-            <!-- Album Covers / Popular Songs -->
+            <!-- Popular Songs -->
             <div class = "col-md-8">
                 <div class = "row">
                     <div class = "picks_box">
@@ -156,66 +156,65 @@
                 <div class = "advancedSearch">
                 
                     <h3>Advanced Search</h3>
-                    <form name = "advancedSearchForm" method = "post" onsubmit = "return validateForm()" action = "">
+                    <form name = "advancedSearchForm" method = "post" onsubmit = "return validateForm(this)" action = "advancedSearch.php">
 
                         <!-- Keyword Text Box -->
                         <div class = "form-group">
-                            <label><input type = "checkbox" id = "keywordToggle">Keyword(s)</label>
-                            <input type = "text" id = "keywords" class = "form-control" />
+                            <label><input type = "checkbox" name = "keywordToggle" value = "1" id = "keywordToggle">Keyword(s)</label>
+                            <input type = "text" name = "keywords" id = "keywords" class = "form-control" />
                             <p id = "keywordErrorMessage"></p>
                         </div>
                         
                         <!-- Genre Select Drop-Down -->
                         <div class = "form-group">
-                            <label><input type = "checkbox" id = "genreToggle" value = "">Genre</label>
-                            <select class = "form-control" id = "genre">
-                                <option>Alternative</option>
-                                <option>Rock</option>
-                                <option>Electronic</option>
-                                <option>Classical</option>
-                                <option>Rap</option>
-                                <option>Pop</option>
+                            <label><input type = "checkbox" name = "genreToggle" value = "1" id = "genreToggle" value = "">Genre</label>
+                            <select class = "form-control" name = "genre" id = "genre">
+                                <option value = "Acoustic">Acoustic / Jazz</option>
+                                <option value = "Cinematic">Cinematic</option>
+                                <option value = "Electronic">Electronic</option>
+                                <option value = "Rock">Rock</option>
+                                <option value = "Corporate">Corporate / Professional</option>
                             </select>
                         </div>
                         
                         <!-- Tag Checkboxes -->
                         <div class = "form-group">
-                            <label><input type = "checkbox" id = "tagToggle" value = "">Tags(s)</label>
+                            <label><input type = "checkbox" name = "tagToggle" id = "tagToggle" value = "1">Tags(s)</label>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "upbeat">Upbeat</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "upbeat">Upbeat</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "funky">Funky</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "funky">Funky</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "energetic">Energetic</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "epic">Epic</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "epic">Epic</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "low_tempo" id = "low_tempo">Low Tempo</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "instrumental" id = "instrumental">Instrumental</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "high_tempo" id = "high_tempo">High Tempo</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "vocalsonly" id = "vocalsonly">Vocals Only</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "suspenseful">Suspenseful</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "comedic">Comedic</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "relaxed">Relaxed</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "explicit" id = "explicit">Explicit</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "groovy">Groovy</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "nonexplicit" id = "nonexplicit">Non-Explicit</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "instrumental" id = "instrumental">Instrumental</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "romantic">Romantic</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "synthetic" id = "synthetic">Synthetic</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "sad">Sad</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "sad">Sad</label>
                             </div>
                             <div class = "checkbox">
-                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tag" value = "synthetic">Synthetic</label>
+                                <label class = "control-label col-sm-4"><input type = "checkbox" name = "tags[]" value = "romantic">Romantic</label>
                             </div>
                             <div class = "row"></div>
                             <p></p>
@@ -226,6 +225,7 @@
                             <input type = "submit" value = "Search" class = "btn btn-primary btn-md" />
                             <input type = "reset" value = "Clear" class = "btn btn-primary btn-md" />
                         </div>
+                    </form>
                 </div>
         
             </div>

@@ -1,0 +1,30 @@
+
+
+.searchResultImage {
+    padding: 5px;
+}
+
+.tags {
+    font-size: 15px;
+}
+
+.songName {
+    font-variant: small-caps;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.artist {
+    margin-top: 20px;
+}
+
+.genre {
+    margin-top: 3px;
+}
+
+.tags {
+    margin: auto;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+}

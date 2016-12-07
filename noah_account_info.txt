@@ -1,0 +1,12 @@
+CS Account Stuff
+
+Username: nkilleen
+Password: Roku17
+
+/u/z/users/cs329e-fa16/nkilleen/SoundScout
+
+.zinfo stuff
+
+user = nkilleen
+database = cs329e_nkilleen
+password = 2rqtG8DGpd
